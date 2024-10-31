@@ -1,5 +1,5 @@
 @font-face {
-    font-family: ubuntu;
+    font-family: "ubuntu";
     src: url(/font/Ubuntu/Ubuntu-Regular.ttf);
 }
 
@@ -12,14 +12,77 @@ body{
 .header-container{
     background: #F5EFFF;
     width: 100vw;
-    height: 100vh;
-    max-width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
 }
-.header-container img{
+.main-logo-container{
+    width: 15vw;
+}
+
+.header-container .main-logo-container img{
     width: 50px;
     height: 50px;
     border: 1px solid black;
-    margin-left: 10px;
-    margin-top: 10px;
-    max-width: 100vw;
+    margin-left: 2vw;
+    margin-top: 5vh;
+}
+.header-container .contacting{
+    width: 20vw;
+    display: flex;
+    gap: 30px;
+    margin-top: 5vh;
+}
+
+.contact-item img{
+    width: 40px;
+}
+.about-me{
+    background: #F5EFFF;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+}
+.personal-info{
+    width: 40%;
+
+    justify-content: center;
+}
+.about-me p{
+    font-family: "ubuntu";
+}
+.about-me #name{
+    margin-top: 0;
+    font-size: 125%;
+}
+.about-me .image-container{
+    margin-right: 10vw;
+}
+.test-image{
+    margin: 0;
+    width: 15vw;
+    height: auto;
+    border: 3px solid black;
+
+}
+.parallelogram {
+	width: 100px;
+	height: 200px;
+    transform: skew(-10deg);
+	background: #555;
+}
+.projects{
+    width: 100vw;
+    height: 80vh;
+    background: #CDC1FF;
+}
+.transition {
+	width: 0;
+	height: 0;
+	border-top: 20vh solid transparent;
+	border-left: 100vw solid #CDC1FF;
+	border-bottom: 0px solid transparent;
+    background-color: #F5EFFF;
 }
