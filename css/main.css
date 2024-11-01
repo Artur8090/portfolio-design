@@ -35,7 +35,7 @@ body{
 }
 
 .contact-item img{
-    width: 40px;
+    width: 30px;
 }
 .about-me{
     background: #F5EFFF;
@@ -47,8 +47,9 @@ body{
 }
 .personal-info{
     width: 40%;
-
+    height: 30vh;
     justify-content: center;
+    padding: 10px;
 }
 .about-me p{
     font-family: "ubuntu";
@@ -56,6 +57,10 @@ body{
 .about-me #name{
     margin-top: 0;
     font-size: 125%;
+}
+.about-me #working-position{
+    color: #555;
+    font-style: italic;
 }
 .about-me .image-container{
     margin-right: 10vw;
@@ -73,11 +78,6 @@ body{
     transform: skew(-10deg);
 	background: #555;
 }
-.projects{
-    width: 100vw;
-    height: 80vh;
-    background: #CDC1FF;
-}
 .transition {
 	width: 0;
 	height: 0;
@@ -85,4 +85,24 @@ body{
 	border-left: 100vw solid #CDC1FF;
 	border-bottom: 0px solid transparent;
     background-color: #F5EFFF;
+}
+.projects{
+    width: 100vw;
+    height: 80vh;
+    background: #CDC1FF;
+
+}
+.projects .project-header-container{
+    display: flex;
+    justify-content: center;
+}
+.projects #project-header{
+    font-family: 'ubuntu';
+    font-size: 1.5vw;
+    margin-top: 0;
+    border: 0;
+    margin-left: 2vw;
+    border-bottom: 0.5vh solid #9985fe;
+    border-style: dashed;
+
 }
