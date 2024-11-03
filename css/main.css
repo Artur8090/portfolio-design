@@ -3,100 +3,143 @@
     src: url(/font/Ubuntu/Ubuntu-Regular.ttf);
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
 }
 
-
-.header-container{
+.header-container {
     background: #F5EFFF;
-    width: 100vw;
+    width: 100%;
     height: 20vh;
     display: flex;
     justify-content: space-between;
 }
-.main-logo-container{
+
+.main-logo-container {
     width: 15vw;
 }
 
-.header-container .main-logo-container img{
+.header-container .main-logo-container img {
     width: 50px;
     height: 50px;
     border: 1px solid black;
     margin-left: 2vw;
     margin-top: 5vh;
 }
-.header-container .contacting{
-    width: 20vw;
+
+.right-side {
     display: flex;
-    gap: 30px;
-    margin-top: 5vh;
+    justify-content: space-between;
+    margin-right: 5vw;
 }
 
-.contact-item img{
+.nav {
+    height: 5vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between; /* Space between anchor items and contacting icons */
+    align-items: center; /* Align items vertically */
+    background-color: #CDC1FF; /* Background color from contacting */
+    border-radius: 20px; /* Border radius from contacting */
+    padding: 10px;
+    width: 100%; 
+    font-family: 'ubuntu';
+}
+
+.anchor {
+    display: flex;
+    gap: 20px; /* Adjust the gap between anchor items as needed */
+    margin-right: 10px;
+}
+
+.contacting {
+    display: flex;
+    gap: 10px;
+    height: 30px;
+    align-items: center; /* Center the icons vertically */
+}
+
+.contact-item {
     width: 30px;
 }
-.about-me{
+
+.contact-item img {
+    width: 30px;
+}
+
+.about-me {
     background: #F5EFFF;
-    width: 100vw;
+    width: 100%;
     height: 40vh;
     display: flex;
     justify-content: center;
     gap: 15%;
 }
-.personal-info{
+
+.personal-info {
     width: 40%;
     height: 30vh;
     justify-content: center;
     padding: 10px;
 }
-.about-me p{
+
+.about-me p {
     font-family: "ubuntu";
 }
-.about-me #name{
+
+.about-me #name {
     margin-top: 0;
     font-size: 125%;
 }
-.about-me #working-position{
+
+.about-me #working-position {
     color: #555;
     font-style: italic;
 }
-.about-me .image-container{
+
+.about-me .image-container {
     margin-right: 10vw;
 }
-.test-image{
+
+.test-image {
     margin: 0;
     width: 15vw;
     height: auto;
     border: 3px solid black;
+}
 
-}
 .parallelogram {
-	width: 100px;
-	height: 200px;
+    width: 100px;
+    height: 200px;
     transform: skew(-10deg);
-	background: #555;
+    background: #555;
 }
+
 .transition {
-	width: 0;
-	height: 0;
-	border-top: 20vh solid transparent;
-	border-left: 100vw solid #CDC1FF;
-	border-bottom: 0px solid transparent;
+    width: 0;
+    height: 0;
+    border-top: 20vh solid transparent;
+    border-left: 100vw solid #CDC1FF;
+    border-bottom: 0px solid transparent;
     background-color: #F5EFFF;
 }
-.projects{
-    width: 100vw;
+
+.projects {
+    width: 100%;
     height: 80vh;
     background: #CDC1FF;
-
 }
-.projects .project-header-container{
+
+.projects .project-header-container {
     display: flex;
     justify-content: center;
 }
-.projects #project-header{
+
+.projects #project-header {
     font-family: 'ubuntu';
     font-size: 1.5vw;
     margin-top: 0;
@@ -104,5 +147,4 @@ body{
     margin-left: 2vw;
     border-bottom: 0.5vh solid #9985fe;
     border-style: dashed;
-
 }
